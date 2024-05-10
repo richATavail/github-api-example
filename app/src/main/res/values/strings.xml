@@ -1,0 +1,15 @@
+<resources>
+	<string name="app_name">Github Popularity Boards</string>
+	<string name="start">Start</string>
+	<string name="back_button_disabled">Back button is disabled on this screen</string>
+	<string name="error">Error: Try Again</string>
+	<string name="repos_title">Github Popular Repositories</string>
+	<string name="top_contributors_title">Top Contributor:</string>
+	<string name="contribution_count">contributions</string>
+
+
+	<!--	CONTENT DESCRIPTION -->
+	<string name="refresh_icon">Rotating Rotating Icon</string>
+	<string name="star_icon">Star Icon</string>
+	<string name="results_per_page">Result Count</string>
+</resources>
