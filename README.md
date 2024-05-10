@@ -19,9 +19,9 @@ This app is an assignment described by the following instructions:
 > GET https://api.github.com/repos/{owner}/{repo}/contributors
 
 ## About
-The app is built using Jetpack Compose and its Material 3 components. It also 
-uses a very light-weight Ktor client implementation. Given this is a simple app, 
-the following features were omitted:
+The app is built using Jetpack Compose and its Material 3 components supporting
+Android SDK 31 and up (Android 12). It also uses a very light-weight Ktor client 
+implementation. Given this is a simple app, the following features were omitted:
 
 - **Session Data Cache**: The app does not cache the data fetched from the Github 
   API. This means that the app will fetch the data every time it is opened or 
