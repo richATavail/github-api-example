@@ -12,14 +12,11 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.WindowSizeClass
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -64,6 +61,9 @@ class MainActivity : ComponentActivity() {
 				@Suppress("UNUSED_VARIABLE")
 				val windowSize: WindowSizeClass = calculateWindowSizeClass(this)
 
+				// In an app this simple, we don't need to use navigation,
+				// however to demonstrate navigation, we create a navigation
+				// graph with two screens: StartView and ReposView.
 				val navController = rememberNavController()
 				Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
 					NavHost(
@@ -96,21 +96,5 @@ class MainActivity : ComponentActivity() {
 		 * The duration in milliseconds of the fade in animation.
 		 */
 		private const val FADE_IN_DURATION = 300
-	}
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-	Text(
-		text = "Hello $name!",
-		modifier = modifier
-	)
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-	GithubPopularityBoardsTheme {
-		Greeting("Android")
 	}
 }
